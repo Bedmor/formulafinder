@@ -2,6 +2,7 @@
 let dict={
     "hız" : "x=vt",
     "Newton 1":"F=ma",
+    "logab":"logac/logbc",
 }
 
 kutu = document.getElementById("kutu");
