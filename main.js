@@ -19,7 +19,7 @@ function Ara(){
         console.log(kutu.value)
         kutu.placeholder = "You Can Search Here!"
         kutu.value = ""
-        leybıl.innerHTML = `${dict.$val}`
+        leybıl.innerHTML = `${dict[val]}`
     }
     else{
         kutu.value = ""

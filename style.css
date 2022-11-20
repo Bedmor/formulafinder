@@ -1,6 +1,6 @@
 html, body{
 
-    background-color: rgb(1, 129, 233);
+    background-color: #003459;
     font-family: 'Roboto Condensed', 'Arial Narrow', Arial, sans-serif;
 }
 @keyframes dalga{
@@ -11,10 +11,19 @@ html, body{
         transform: translate(-50%,-20%);
     }
 }
+#leybıl{
+    text-align: center;
+    margin: auto;
+    margin-top: 60vh;
+    font-size: 15vh;
+    color: #57CC99;
+    
+    
+}
 .bubble{
     height: max(300px, 30vw);
     width: max(300px, 30vw);
-    background-color: blue;
+    background-color: #57CC99;
     border-radius: 100%;
     position: absolute;
     left: 50%;
@@ -33,44 +42,64 @@ html, body{
     display: flexbox;
     margin: auto;
     position:absolute;
-    top: 500px;
+    top: 50vh;
     
 }
+#kutu:focus{
+    border-style: solid;
+}
+::placeholder{
+    color: #57CC99;
+}
 #kutu{
-    width: 50%;
-    left: 25%;
-    height: 5.853em;
-    border-style: none;
-    border-radius: 20px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    color: #57CC99;
+    width: 100vh;
+    left: 50vh;
+    height: 6vh;
+    border-width: 1vh;
+    border-radius: 2vh;
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
     outline: none;
-    padding-left: 25px;
+    padding-left: 2.5vh;
     padding-right: 0px;
-    
+    border-style:hidden;
+    background-color: #003459;
+    border-color: #57CC99;
+    font-size: 2vh;
 }
 #tus{
     
-    height: 6em;
-    width: 70px;
+    height: 8vh;
+    width: 8vh;
     left: 75%;
-    background-color:rgb(4, 0, 212);
+    background-color:#57CC99;
     color: white;
-    border-radius: 10px;
+    border-radius: 1vh;
     border-left: 0px;
     border-style:none;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
     display: inline;
+    font-size: 2vh;
 }
 #text{
-    position: relative;
-    left: 2%;
-    top: 300px;
+    position: absolute;
+    left: 58vh;
+    top: 30vh;
     text-align: center;
     align-items: center;
-    font-size: 700%;
-    color: white;
-    stroke: black;
-    stroke-width: 20px;
+    font-size: 12vh;
+    color: #57CC99;
+}
+.add{
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: azure;
+    border-radius: 50px;
+    background-color: #57CC99;
+    font-size: 2vh;
+    border-style: none;
 }
