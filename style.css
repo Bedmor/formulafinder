@@ -1,0 +1,76 @@
+html, body{
+
+    background-color: rgb(1, 129, 233);
+    font-family: 'Roboto Condensed', 'Arial Narrow', Arial, sans-serif;
+}
+@keyframes dalga{
+    from, to {
+        transform: translate(-50%, 0%);
+    }
+    50%{
+        transform: translate(-50%,-20%);
+    }
+}
+.bubble{
+    height: max(300px, 30vw);
+    width: max(300px, 30vw);
+    background-color: blue;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    animation: dalga 2s ease-in-out infinite;
+}
+#bubble-wrapper{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    overflow: hidden;
+    pointer-events: none;
+}
+.kvet{
+    display: flexbox;
+    margin: auto;
+    position:absolute;
+    top: 500px;
+    
+}
+#kutu{
+    width: 50%;
+    left: 25%;
+    height: 5.853em;
+    border-style: none;
+    border-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    padding-left: 25px;
+    padding-right: 0px;
+    
+}
+#tus{
+    
+    height: 6em;
+    width: 70px;
+    left: 75%;
+    background-color:rgb(4, 0, 212);
+    color: white;
+    border-radius: 10px;
+    border-left: 0px;
+    border-style:none;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    display: inline;
+}
+#text{
+    position: relative;
+    left: 2%;
+    top: 300px;
+    text-align: center;
+    align-items: center;
+    font-size: 700%;
+    color: white;
+    stroke: black;
+    stroke-width: 20px;
+}
