@@ -80,7 +80,7 @@ html, body{
     border-style:none;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
-    display: inline;
+    display: inline-block;
     font-size: 2vh;
 }
 #text{
