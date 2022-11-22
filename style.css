@@ -41,7 +41,6 @@ html, body{
 .kvet{
     display: flexbox;
     margin: auto;
-    position:absolute;
     top: 50vh;
     
 }
@@ -69,7 +68,7 @@ html, body{
     font-size: 2vh;
 }
 #tus{
-    
+    position:fixed;
     height: 8vh;
     width: 8vh;
     left:75vh;
