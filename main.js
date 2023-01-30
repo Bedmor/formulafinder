@@ -1,16 +1,18 @@
 
 let dict={
     "hız" : "x=vt",
-    "Newton 1":"F=ma",
+    "newton 1":"F=ma",
     "logab":"logac/logbc",
 }
 
 kutu = document.getElementById("kutu");
 
 function Ekle(){
-    
+    fetch("http://localhost:80",{
+        method:"POST",
+        body:`${kutu.value} : ${formul_ad = prompt("Enter desired formula")}`,
+    })
 }
-
 function Ara(){
     val = (kutu.value).toLowerCase();
     leybıl = document.getElementById("leybıl")
@@ -36,5 +38,4 @@ button = document.getElementById("tus");
 button.addEventListener("click",Ara());
 kutu.placeholder = "You Can Search Here!"
 
-adder = document.getElementsByClassName("add");
-adder.addEventListener("click",Ekle())
+adder = document.getElementById("add");

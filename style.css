@@ -92,7 +92,7 @@ html, body{
     font-size: 12vh;
     color: #57CC99;
 }
-.add{
+#add{
     cursor: pointer;
     position: fixed;
     top: 0;
