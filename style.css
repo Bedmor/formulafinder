@@ -45,15 +45,16 @@ html, body{
     
 }
 #kutu:focus{
-    border-style: solid;
+    border-color: #57CC99;
 }
 ::placeholder{
     color: #57CC99;
 }
 #kutu{
+    position: absolute;
     color: #57CC99;
-    width: 100vh;
-    left: 50vh;
+    width: 53vw;
+    left: 25vw;
     height: 6vh;
     border-width: 1vh;
     border-radius: 2vh;
@@ -62,16 +63,16 @@ html, body{
     outline: none;
     padding-left: 2.5vh;
     padding-right: 0px;
-    border-style:hidden;
+    border-style:solid;
+    border-color: #003459;
     background-color: #003459;
-    border-color: #57CC99;
     font-size: 2vh;
 }
 #tus{
-    position:fixed;
+    position:absolute;
     height: 8vh;
-    width: 8vh;
-    left:75vh;
+    width: 5vw;
+    left:75vw;
     background-color:#57CC99;
     color: white;
     border-radius: 1vh;
@@ -84,7 +85,7 @@ html, body{
 }
 #text{
     position: absolute;
-    left: 58vh;
+    left: 30vw;
     top: 30vh;
     text-align: center;
     align-items: center;
@@ -99,6 +100,6 @@ html, body{
     color: azure;
     border-radius: 50px;
     background-color: #57CC99;
-    font-size: 2vh;
+    font-size: 1.5vw;
     border-style: none;
 }

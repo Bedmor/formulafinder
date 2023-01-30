@@ -7,8 +7,12 @@ let dict={
 
 kutu = document.getElementById("kutu");
 
+function Ekle(){
+    
+}
+
 function Ara(){
-    val = (kutu.value)
+    val = (kutu.value).toLowerCase();
     leybıl = document.getElementById("leybıl")
     if (leybıl){
         document.body.removeChild(leybıl)
@@ -31,3 +35,6 @@ function Ara(){
 button = document.getElementById("tus");
 button.addEventListener("click",Ara());
 kutu.placeholder = "You Can Search Here!"
+
+adder = document.getElementsByClassName("add");
+adder.addEventListener("click",Ekle())
