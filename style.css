@@ -38,12 +38,6 @@ html, body{
     overflow: hidden;
     pointer-events: none;
 }
-.kvet{
-    display: flexbox;
-    margin: auto;
-    top: 50vh;
-    
-}
 #kutu:focus{
     border-color: #57CC99;
 }
@@ -53,24 +47,26 @@ html, body{
 #kutu{
     position: absolute;
     color: #57CC99;
-    width: 53vw;
+    width: 50vw;
     left: 25vw;
-    height: 6vh;
-    border-width: 1vh;
-    border-radius: 2vh;
-    border-top-right-radius: 1vh;
-    border-bottom-right-radius: 1vh;
+    top: 50%;
+    height: 3vw;
+    border-width: 10px;
+    border-radius: 20px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
     outline: none;
-    padding-left: 2.5vh;
+    padding-left: 1.25vw;
     padding-right: 0px;
     border-style:solid;
     border-color: #003459;
     background-color: #003459;
-    font-size: 2vh;
+    font-size: 1vmax;
 }
 #tus{
     position:absolute;
-    height: 8vh;
+    height: 8.35vh;
+    top: 50%;
     width: 5vw;
     left:75vw;
     background-color:#57CC99;
@@ -81,15 +77,16 @@ html, body{
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
     display: inline-block;
-    font-size: 2vh;
+    font-size: 1vw;
 }
 #text{
-    position: absolute;
+    display: flex;
+    position: fixed;
     left: 26vw;
-    top: 30vh;
+    top: 20vh;
     text-align: center;
     align-items: center;
-    font-size: 12vh;
+    font-size: 6vw;
     color: #57CC99;
 }
 #add{
@@ -102,4 +99,14 @@ html, body{
     background-color: #57CC99;
     font-size: 1.5vw;
     border-style: none;
+}
+#search{
+    border-radius: 50px;
+    overflow:hidden;
+    z-index: 1;
+    margin: auto;
+    left: 50%;
+    position:absolute;
+    top: 50%;
+    transform: translate(-50%,-50%)
 }

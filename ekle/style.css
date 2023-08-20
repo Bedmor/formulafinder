@@ -1,0 +1,21 @@
+html body{
+    background-color:lightskyblue;
+    display: inline-block;
+}
+#sinput{
+    outline: none;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+#sbutton{
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    top: 50%;
+    left: 75%;
+    position:fixed;
+    transform: translate(-50%,-50%);
+}
