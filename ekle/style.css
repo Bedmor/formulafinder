@@ -1,13 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 html body{
     background-color:lightskyblue;
     display: inline-block;
 }
-#sinput{
+#carpi{
+    box-shadow: 10px;
+    margin: auto;
+    top: 10%;
+    right: 5%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+}
+}
+label{
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+    
+}
+label:first-of-type{
+    margin: auto;
+    top: 40%;
+    left: 18%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+}
+label:last-of-type{
+    margin: auto;
+    top: 50%;
+    left: 15%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+}
+#formul{
     outline: none;
     margin: auto;
     top: 50%;
     left: 50%;
-    position: absolute;
+    position: fixed;
+    transform: translate(-50%,-50%);
+}
+#formul_ad{
+    outline: none;
+    margin: auto;
+    top: 40%;
+    left: 50%;
+    position: fixed;
     transform: translate(-50%,-50%);
 }
 #sbutton{

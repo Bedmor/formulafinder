@@ -51,8 +51,8 @@ html, body{
     left: 25vw;
     top: 50%;
     height: 3vw;
-    border-width: 10px;
-    border-radius: 20px;
+    border-width: 1vh;
+    border-radius: 2vh;
     border-top-right-radius: 1px;
     border-bottom-right-radius: 1px;
     outline: none;
@@ -102,6 +102,9 @@ html, body{
 }
 #search{
     border-radius: 50px;
+    border-style: solid;
+    border: black;
+    border-width: 10px;
     overflow:hidden;
     z-index: 1;
     margin: auto;

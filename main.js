@@ -8,18 +8,8 @@ let dict={
 let kutu = document.getElementById("kutu");
 
 function Ekle(){
-    response = fetch("http://localhost:80",{
-        method:"POST",
-        body:`{
-            "${kutu.value}" : "${formul_ad = prompt("Enter desired formula")}"
-        }`,
-        headers:{
-            "Content-Type":'application/json',
-        },
-    })
-
-    console.log(response.body)
-    return response
+    pencere = document.getElementById("search");
+    pencere.style.opacity = 100
 }
 function Ara(){
     val = (kutu.value).toLowerCase();
