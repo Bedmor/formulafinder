@@ -1,58 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 html body{
-    background-color:lightskyblue;
+    background-color:#003459;
     display: inline-block;
 }
 #carpi{
-    box-shadow: 10px;
-    margin: auto;
+    color: azure;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #57CC99;
+    background-color: #57CC99;
+    cursor: pointer;
     top: 10%;
     right: 5%;
     position: fixed;
     transform: translate(-50%,-50%);
 }
-}
+
 label{
+    font-size: larger;
+    color:#57CC99 ;
     font-family: 'Poppins', sans-serif;
-    font-style: bold;
     
 }
 label:first-of-type{
     margin: auto;
     top: 40%;
-    left: 18%;
+    left: 15%;
     position: fixed;
     transform: translate(-50%,-50%);
 }
 label:last-of-type{
     margin: auto;
     top: 50%;
-    left: 15%;
+    left: 12%;
     position: fixed;
     transform: translate(-50%,-50%);
 }
 #formul{
     outline: none;
+    border-style: solid;
+    border-radius: 5px;
+    width: 50%;
+    outline: none;
     margin: auto;
     top: 50%;
     left: 50%;
     position: fixed;
     transform: translate(-50%,-50%);
 }
+#formul:focus{
+    border-color: #57CC99;
+}
 #formul_ad{
     outline: none;
+    border-style: solid;
+    border-radius: 5px;
     margin: auto;
+    width:50%;
     top: 40%;
     left: 50%;
     position: fixed;
     transform: translate(-50%,-50%);
 }
+#formul_ad:focus{
+    border-color: #57CC99;
+}
 #sbutton{
-    height: fit-content;
-    width: fit-content;
+    overflow: hidden;
+    box-sizing: content-box;
+    cursor: pointer;
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    color: azure;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #57CC99;
+    height: 10%;
+    width: 50%;
     margin: auto;
-    top: 50%;
-    left: 75%;
+    bottom: 20%;
+    left: 50%;
     position:fixed;
     transform: translate(-50%,-50%);
 }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 html, body{
 
     background-color: #003459;
@@ -50,7 +51,7 @@ html, body{
     width: 50vw;
     left: 25vw;
     top: 50%;
-    height: 3vw;
+    height: 6vh;
     border-width: 1vh;
     border-radius: 2vh;
     border-top-right-radius: 1px;
@@ -65,7 +66,7 @@ html, body{
 }
 #tus{
     position:absolute;
-    height: 8.35vh;
+    height: 8vh;
     top: 50%;
     width: 5vw;
     left:75vw;
@@ -91,22 +92,27 @@ html, body{
 }
 #add{
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     color: azure;
-    border-radius: 50px;
+    border-radius: 1rem;
     background-color: #57CC99;
-    font-size: 1.5vw;
+    font-size: 3vw;
     border-style: none;
 }
+.search{
+    border: none;
+}
 #search{
+    box-shadow:0 0 20px #001e33;
+    opacity: 0;
     border-radius: 50px;
-    border-style: solid;
-    border: black;
-    border-width: 10px;
+    border-style:solid ;
+    border-color: black;
+    border-width: 3px;
     overflow:hidden;
-    z-index: 1;
+    z-index: -1;
     margin: auto;
     left: 50%;
     position:absolute;

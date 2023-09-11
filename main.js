@@ -1,15 +1,16 @@
 
-let dict={
-    "hız" : "x=vt",
-    "newton 1":"F=ma",
-    "logab":"logac/logbc",
-}
-
 let kutu = document.getElementById("kutu");
+
+function Close(){
+    pencere = document.getElementById("search")
+    pencere.style.opacity = 0;
+    pencere.style.zIndex = -999;
+}
 
 function Ekle(){
     pencere = document.getElementById("search");
-    pencere.style.opacity = 100
+    pencere.style.opacity = 100;
+    pencere.style.zIndex = 1;
 }
 function Ara(){
     val = (kutu.value).toLowerCase();
@@ -42,6 +43,12 @@ function Ara(){
     }
 }
 
-button = document.getElementById("tus");
+
+
+embed = document.getElementById("search");
+carpi = embed.document.getElementById("carpi")
+carpi.addEventListener("click",()=> Close())
+
+button = document.getElementById("tus")
 button.addEventListener("click",() => Ara() );
 kutu.placeholder = "You Can Search Here!"
