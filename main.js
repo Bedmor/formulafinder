@@ -44,11 +44,11 @@ function Ara(){
 }
 
 
-
-embed = document.getElementById("search");
-carpi = embed.document.getElementById("carpi")
-carpi.addEventListener("click",()=> Close())
-
+window.onload = function(){
+    embed = document.getElementsByClassName("search")[0]
+    carpi = embed.contentWindow.document.getElementById("carpi")
+    carpi.addEventListener("click",()=> Close())
+}
 button = document.getElementById("tus")
 button.addEventListener("click",() => Ara() );
 kutu.placeholder = "You Can Search Here!"
