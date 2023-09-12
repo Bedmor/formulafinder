@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-db = new sqlite.Database("database.sqlite", sqlite.OPEN_READWRITE);
+db = new sqlite.Database("server/database.sqlite", sqlite.OPEN_READWRITE);
 db.run(
   "CREATE TABLE IF NOT EXISTS formulafinder (formul TEXT,formul_ad TEXT,UNIQUE(formul, formul_ad))"
 );
