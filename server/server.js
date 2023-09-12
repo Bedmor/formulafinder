@@ -11,7 +11,7 @@ db.run(
 app.use(express.json((type = "application/json")), cors());
 
 app.get("/ekle", (req, res) => {
-  res.send("Hello");
+  res.send("You shouldn't be here");
 });
 
 app.post("/ekle", (req, res) => {
@@ -30,12 +30,12 @@ app.post("/", (req, res) => {
   ara = db.get(
     `SELECT * FROM formulafinder WHERE formul = "${Object.keys(req.body)[0]}"`,
     (err, row) => {
-        if(row){
-            res.send(row)
-        }
-        if(err){
-            res.send(err)
-        }
+      if (row) {
+        res.send(row);
+      }
+      if (err) {
+        res.send(err);
+      }
       return row;
     }
   );

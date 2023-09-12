@@ -42,7 +42,7 @@ function Ara() {
           kutu.placeholder = "Try to search for someting else";
         }
       });
-  } catch {
+  } catch (err) {
     kutu.value = "";
     kutu.placeholder = "Try to search for someting else";
   }
@@ -58,3 +58,4 @@ ekletus.addEventListener("click", () => Ekle());
 button = document.getElementById("tus");
 button.addEventListener("click", () => Ara());
 kutu.placeholder = "You Can Search Here!";
+kutu;
