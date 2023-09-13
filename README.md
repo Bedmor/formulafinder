@@ -1,0 +1,1 @@
+I was checking my notebook to find the formula i want for questions i was studying so i told myself what if i made a database that contains formulas and serve it on a graphical display.So here we are 😁
