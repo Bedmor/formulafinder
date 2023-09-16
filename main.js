@@ -1,13 +1,13 @@
 function Close() {
   pencere = document.getElementById("search");
-  pencere.style.opacity = 0;
+  pencere.classList.remove("fade");
   pencere.style.zIndex = -999;
 }
 
 function Ekle() {
   pencere = document.getElementById("search");
-  pencere.style.opacity = 100;
   pencere.style.zIndex = 1;
+  pencere.classList.add("fade");
 }
 
 function Ara() {
@@ -33,7 +33,6 @@ function Ara() {
           leybıl = document.createElement("div");
           leybıl.id = "leybıl";
           document.body.appendChild(leybıl);
-          console.log(data);
           kutu.placeholder = "You Can Search Here!";
           kutu.value = "";
           leybıl.innerHTML = Object.values(data)[0];
@@ -58,4 +57,3 @@ ekletus.addEventListener("click", () => Ekle());
 button = document.getElementById("tus");
 button.addEventListener("click", () => Ara());
 kutu.placeholder = "You Can Search Here!";
-kutu;

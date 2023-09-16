@@ -39,7 +39,7 @@ label:last-of-type{
     position: fixed;
     transform: translate(-50%,-50%);
 }
-#formul{
+#formul_ad{
     outline: none;
     border-style: solid;
     border-radius: 5px;
@@ -54,7 +54,7 @@ label:last-of-type{
 #formul:focus{
     border-color: #57CC99;
 }
-#formul_ad{
+#formul{
     outline: none;
     border-style: solid;
     border-radius: 5px;
